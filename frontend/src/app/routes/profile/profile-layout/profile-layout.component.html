@@ -1,0 +1,23 @@
+<page-header class="p-t-32 p-b-48 m-b--24 bg-gray-900"
+             [title]="'Personal Profile'"
+             [showBreadCrumb]="false">
+</page-header>
+
+<input style="display: none;" type="file" id="profileImageInput" (change)="profileImageChanged($event)">
+<div fxLayout="row wrap" class="matero-row"> 
+  <div class="matero-col" fxFlex="100" fxFlex.gt-xs="50" fxFlex.gt-sm="33.33" fxFlex.gt-md="25">
+    <mat-card>
+      <div class="text-center">
+        <img class="m-b-8 r-full" src="{{environment.baseUrl+model.profileimage}}" alt="" width="80">
+        <h2 class="m-t-0 m-b-8 f-w-400">{{model.firstname +' ' +model.lastname}}</h2>
+        <p class="m-t-0 m-b-8">{{'@'+model.username +', ' +model.designation}}</p>
+        <p class="m-t-0 text-grey-500">{{model.email}}</p>
+
+        <button (click)="dummyProfileImageChangedClicked()" mat-raised-button color="accent" class="m-l-8">Change Image</button>
+      </div>
+    </mat-card>
+  </div>
+  <div class="matero-col" fxFlex="100" fxFlex.gt-xs="50" fxFlex.gt-sm="66.67" fxFlex.gt-md="75">
+    <router-outlet></router-outlet>
+  </div>
+</div>

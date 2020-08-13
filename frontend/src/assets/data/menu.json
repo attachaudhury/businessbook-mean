@@ -1,0 +1,139 @@
+{
+  "menu": [
+    {
+      "state": "dashboard",
+      "name": "Dashboard",
+      "type": "link",
+      "icon": "dashboard"
+    },
+    {
+      "state": "category",
+      "name": "Category",
+      "type": "sub",
+      "icon": "category",
+      "children": [
+        {
+          "state": "add",
+          "name": "Add Category",
+          "type": "link"
+        },
+        {
+          "state": "list",
+          "name": "Category List",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "state": "product",
+      "name": "Inventory",
+      "type": "sub",
+      "icon": "store",
+      "children": [
+        {
+          "state": "add",
+          "name": "Add Product",
+          "type": "link"
+        },
+        {
+          "state": "list",
+          "name": "Product List",
+          "type": "link"
+        }
+      ]
+    },
+    
+    {
+      "state": "user",
+      "name": "User",
+      "type": "sub",
+      "icon": "store",
+      "children": [
+        {
+          "state": "add",
+          "name": "Add User",
+          "type": "link"
+        },
+        {
+          "state": "list",
+          "name": "User List Rolewise",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "state": "accounting",
+      "name": "Accounting",
+      "type": "sub",
+      "icon": "account_balance_wallet",
+      "children": [
+        {
+          "state": "saleslist",
+          "name": "Sales List",
+          "type": "link"
+        },
+        {
+          "state": "purchasenew",
+          "name": "New Purchase",
+          "type": "link"
+        },
+        {
+          "state": "purchaselist",
+          "name": "Purchase List",
+          "type": "link"
+        },
+        {
+          "state": "productsalesreport",
+          "name": "Products Sales Report",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "state": "accounting",
+      "name": "Sale",
+      "type": "sub",
+      "icon": "shop",
+      "badge": {
+        "color": "green-500",
+        "value": "3"
+      },
+      "children": [
+        {
+          "state": "saleterminal",
+          "name": "Sale Terminal",
+          "type": "link"
+        }
+      ]
+    }
+    ,
+    {
+      "state": "party",
+      "name": "Parties",
+      "type": "sub",
+      "icon": "users",
+      "children": [
+        {
+          "state": "customeradd",
+          "name": "Add Customer",
+          "type": "link"
+        },
+        {
+          "state": "customerlist",
+          "name": "Customers List",
+          "type": "link"
+        },
+        {
+          "state": "vendoradd",
+          "name": "Add Vendor",
+          "type": "link"
+        },
+        {
+          "state": "vendorlist",
+          "name": "Vendors List",
+          "type": "link"
+        }
+      ]
+    }
+  ]
+}
